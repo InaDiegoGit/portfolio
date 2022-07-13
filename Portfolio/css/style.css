@@ -1,0 +1,211 @@
+/* Con el * le damos un estilo general a toda la pagina */
+* { /* Hacemos que la pagina no tenga "Borde" */
+    margin: 0%; 
+    padding: 0%;
+}
+body{
+  font-family: sans-serif; /* Le cambiamos la fuente */
+  background-image: linear-gradient(-45deg, #8f8ae4 50%, #1c2c4d 50%);
+  /*background-color: #4d5893;*/
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+#logo {
+    width: 100px; /* Le damos un ancho de 70px */
+    margin: 15px; /* Le damos un margen de 3px */
+    padding: 3px;  /* Padding de 3px */
+    margin-left: 10px; /* Le ponemos margen a la izquierda, para que tenga un leve espaciado */
+  }
+body p{
+  color: #8f8ae4;
+  margin-left: 16px;  
+}
+body h2{
+  color:#e2c1ff;
+}
+
+/* CSS DEL SLIDER */
+.container-slider {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 15px 50px;
+  position: relative;
+}
+.slider {
+  display: flex;
+  width: 300%;
+  height: 400px;
+  margin-left: -100%;
+}
+.slider__section {
+  width: 100%;
+}
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #8f8ae4;
+  color: #000013;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  text-align:center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__btn:hover{
+  background-color: #e2c1ff;;
+}
+.slider__btn--left{
+  left: 10px;
+}
+.slider__btn--right{
+  right: 10px;
+}
+
+/* CSS DEL CARRUSEL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection{
+  background:	#000013;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+  margin-left: 14%;
+
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #1c2c4d;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #e2c1ff;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+  color: #8f8ae4;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #000013;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+.conoText{
+  margin-left: 250px;
+  margin-right: 600px;
+  border-radius: 20px;
+}
+.conoText p{
+  color: #1c2c4d;
+}
+
+#wrapper {
+width : 90%;
+margin : 0px auto;
+}
+
+#msgerror {
+font-size:1.4em;
+}

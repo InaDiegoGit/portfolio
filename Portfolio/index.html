@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ev3</title>
+    <link rel="icon" href="./img/logo23.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="./img/logo.png" id="logo">
+    <p id="demo"></p>
+    <h2>Mis Intereses</h2>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img/1.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="img/2.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="img/3.jpg" alt="" class="slider__img">
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right"><img src="img/arrowrgt.svg"></div>
+        <div class="slider__btn slider__btn--left" id="btn-left"><img src="img/arrowlf.svg"></div>
+    </div>
+    <h2>Mis Lenguajes</h2>
+    <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                    <img src="img/lenguaje1.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">HTML</div>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                    <img src="img/lenguaje2.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">CSS</div>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                    <img src="img/lenguaje3.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">JS</div>
+               </div>
+             </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                    <img src="img/lenguaje4.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">PYTHON</div>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                    <img src="img/lenguaje5.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">MONGODB</div>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                    <img src="img/lenguaje6.png" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">SQL</div>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class=" active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+    <div class="conoText">
+      <h2>Mis Conocimientos</h2>
+      <p id="cono"></p>
+    </div>
+    <h2>Validar RUT</h2>
+      <content>
+        <div id="wrapper" >
+          <p>&nbsp;</p>
+          <div class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">Rut</span>
+            <input type="text" class="form-control" placeholder="Rut a validar, ej: 11111111-1" aria-describedby="sizing-addon1" id="txt_rut">
+          </div>
+          <p>&nbsp;</p>
+          <button id="btnvalida" class="btn btn-default">Valida RUT</button>
+          <p>&nbsp;</p>
+          <p class="text-info" id="msgerror"></p>
+        </div>
+      </content>
+    <script src="js/slider.js"></script>
+    <script src="js/array.js"></script>
+    <script src="js/rut.js"></script>
+    <script src="js/object.js"></script>
+</body>
+</html>
